@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Resume - A4 Layout</title>
+
+<style>
+*{
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    background:#9dcff1;
+    margin:0;
+    padding:20px;
+}
+
+/* A4 */
+.a4{
+    width:210mm;
+    min-height:300mm;
+    background:#fff;
+    margin:auto;
+    padding:20mm;
+}
+
+/* TOP (LEFT + RIGHT) */
+.top{
+    display:flex;
+    gap:10mm;
+}
+
+/* LEFT */
+.left{
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* RIGHT */
+.right{
+    width:60%;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* BOX */
+.box{
+    padding:10px;
+}
+
+.box h3{
+    margin:0;
+    font-size:16px;
+}
+
+hr{
+    border:1px solid black;
+    margin:5px 0 10px 0;
+}
+
+a{
+    color:rgb(93,0,255);
+}
+
+/* HEADER */
+.name{
+    font-size:45px;
+    font-weight:bold;
+}
+
+.title{
+    font-size:14px;
+    letter-spacing:4px;
+}
+
+/* DECLARATION */
+.declaration{
+    margin:0px;
+}
+
+.decl-footer{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+/* PRINT */
+@media print{
+    body{
+        background:none;
+        padding:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="a4">
+
+    <!-- TOP SECTION -->
+    <div class="top">
+
+        <!-- LEFT -->
+        <div class="left">
+
+            <div class="box">
+                <div class="name">MANOJ S</div>
+                <div class="title" style="padding-left: 9px;">Software Developer</div>
+            </div>
+
+            <div class="box">
+                <h3>CONTACT DETAILS</h3><hr>
+                Phone: 9150798347 <br>
+                Email: <a href="mailto:manojkiotianeee@gmail.com">manojkiotianeee@gmail.com</a><br>
+                LinkedIn: <a href="https://linkedin.com/in/manoj946">linkedin.com/in/manoj946</a>
+                GitHub:  <a href="https://github.com/manoj946sm">github.com/manoj946sm</a>
+            </div>
+
+            <div class="box">
+                <h3>SKILLS</h3><hr>
+                <ul>
+                    <b>Technical Skills:</b>
+                    <li>Data Structures & Algorithms(Expert)</li>
+                    <li>Java(Intermediate)</li>
+                    <li>MySQL</li>
+                    <li>Web: HTML, CSS, JavaScript (or) Frontend Basics</li><br>
+
+                    <b>Soft Skills:</b>
+                    <li>Problem Solving, Analytical Thinking, Time Management, Quick learner, Teamwork</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>AREA OF INTEREST</h3><hr>
+                <ul>
+                    <li>Full Stack Development</li>
+                    <li>Backend Development</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Database Management Systems</li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>ACADEMIC</h3><hr>
+                <b>B.E - EEE</b><br>
+                Knowledge Institute of Technology<br>
+                (2023 - 2027)<br>
+                CGPA: 7.9494 (up to 5th semester)
+                <br><br>
+
+                <b>HSC</b><br>
+                St Paul's Higher Secondary School<br>
+                (2021 - 2023)<br>
+                Percentage: 79%
+            </div>
+
+            <!-- <div class="box">
+                <h3>LANGUAGE</h3><hr>
+                <ul>
+                    <li>Kannada</li>
+                    <li>Tamil</li>
+                    <li>English</li>
+                </ul>
+            </div> -->
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+
+            <div class="box">
+                <h3>ABOUT ME</h3><hr>
+                <p>
+                    A Software Engineering fresher with strong fundamentals in Data Structures and Algorithms,
+                    backend development, and databases. Skilled in logical and mathematical problem-solving
+                    with experience building clean and maintainable applications through projects.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>PROJECT</h3><hr>
+                <b>Sudoku Solver:</b> Developed a web application to solve Sudoku puzzles using HTML, CSS, and JavaScript.
+                <br><br>
+                <b>Bank Management System:</b> Built a console-based application implementing CRUD operations with a focus on basic System Design (LLD).
+                <br><br>
+                <!-- <b>Resume:</b> Designed an ATS-friendly resume template using HTML and CSS with a clean and structured layout. -->
+            </div>
+
+            <div class="box">
+                <h3>INTERNSHIP</h3><hr>
+                <ul>
+                    <li>
+                        <b>Stack Queue Education:</b> UI & UX Design (Figma) – Designed user-friendly interfaces.
+                    </li><br>
+                    <li>
+                        <b>Stack Queue Education:</b> MySQL – Worked on database design and executed SQL queries.
+                    </li><br>
+                    <li>
+                        <b>Stack Queue Education:</b> Data Science using Python – Learned data analysis and performed basic data processing.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>ACHIEVEMENTS</h3><hr>
+                <ul>
+                    <li>Secured 1st position at Project Expo 2K'25 – "Digital Wrench"</li><br>
+                    <li>Achieved 2nd prize in Campus Coders League (12-hour Codeathon)</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>CERTIFICATIONS</h3><hr>
+                <ul>
+                    <li>Codeathon</li>
+                    <li>CodeChef</li>
+                    <li>Digital Wrench</li>
+                    <li>National Level Srinivasa Ramanujan Mathematical Competition</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- DECLARATION FULL WIDTH -->
+    <div class="declaration">
+        <h3 style="margin: 0px;">DECLARATION</h3><hr>
+        <p style="margin: 0px;">
+            I hereby declare that the information provided above is true and correct 
+            to the best of my knowledge and belief.
+        </p>
+
+        <div class="decl-footer">
+            <div>
+                <!-- Place: ___________<br>
+                Date: ___________ -->
+            </div>
+
+            <div>
+                <b style="margin: 0px;">MANOJ S</b>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
